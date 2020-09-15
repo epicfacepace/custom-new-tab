@@ -20,6 +20,19 @@ body {
     grid-template-columns: auto;
 }
 
+.profile {
+    color: #202020;
+    position: absolute;
+    top: 26px;
+    right: 30px;
+    height: 19px;
+    width: 19px;
+}
+
+.profile:hover {
+    color: #ffdb8d;
+}
+
 .search {
     grid-row-start: 0;
     grid-row-end: 1;
