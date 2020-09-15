@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>New Tab</title>
+        <script src="https://kit.fontawesome.com/5362e29fd9.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="content">
+            <div class="search">  
+                <div class="bar">
+                    <input type="text" id="searchBar" placeholder="enter search term...">
+                </div>                
+                <div class="button" onclick="javascript:search()">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <div class="col1">
+                <p style="color: #ffdb8d">EMAIL</p>
+                <a href="https://mail.google.com/mail/u/0/#inbox">braydenioneal</a>
+                <a href="https://mail.google.com/mail/u/2/#inbox">braydenoneal21</a>
+                <a href="https://mail.google.com/mail/u/1/#inbox">happyartist123</a>
+                <a href="https://mail.protonmail.com/inbox">epicfacepace</a>
+            </div>
+
+            <div class="col2">
+                <p style="color: #ffdb8d">SCHOOL</p>
+                <a href="https://classroom.google.com/u/2/h">classroom</a>
+                <a href="https://sdm.sisk12.com/SP/Portal/Parent/ParentClasses.aspx">gradebook</a>
+                <a href="https://emarcom.weebly.com/sociology.html">sociology</a>
+                <a href="https://apclassroom.collegeboard.org/25/home">calculus</a>
+            </div>
+
+            <div class="col3">
+                <p style="color: #ffdb8d">DEV</p>
+                <a href="https://www.duckduckgo.com">duckduckgo</a><br />
+                <a href="https://www.github.com/epicfacepace">github</a><br />
+                <a href="https://www.youtube.com">youtube</a>
+                <a href="https://www.stackoverflow.com">stackoverflow</a>
+            </div>
+        </div>
+        <script>
+            window.onload = function() { 
+                document.getElementById("searchBar").focus(); 
+            }
+
+            var input = document.getElementById("searchBar");
+            input.addEventListener("keyup", function(event) {
+                if (event.keyCode === 13) {
+                    event.preventDefault();
+                    search();
+                }
+            });
+
+            function search() {
+                window.open("https://www.google.com/search?q="+input.value.replace(new RegExp(' ',"g"),"\+"), "_self");
+            }
+        </script>
+    </body>
+</html>
