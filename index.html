@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="style.css">
         <title>New Tab</title>
         <script src="https://kit.fontawesome.com/5362e29fd9.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="profile">
@@ -43,22 +44,5 @@
                 <a href="https://www.stackoverflow.com">stackoverflow</a>
             </div>
         </div>
-        <script>
-            window.onload = function() { 
-                document.getElementById("searchBar").focus(); 
-            }
-
-            var input = document.getElementById("searchBar");
-            input.addEventListener("keyup", function(event) {
-                if (event.keyCode === 13) {
-                    event.preventDefault();
-                    search();
-                }
-            });
-
-            function search() {
-                window.open("https://www.google.com/search?q="+input.value.replace(new RegExp(' ',"g"),"\+"), "_self");
-            }
-        </script>
     </body>
 </html>
