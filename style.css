@@ -30,8 +30,8 @@ body {
 }
 
 .bar {
-    padding-left: 40px;
-    padding-right: 40px;;
+    padding-left: 30px;
+    padding-right: 30px;
     background-color: #151515;
     border-color: #ffdb8d;
     border-width: 2px;
@@ -85,7 +85,7 @@ body {
     grid-column-start: 0;
     grid-column-end: 1;
     width: 250px;
-    padding-left: 40px;
+    padding-left: 30px;
     padding-bottom: 20px;
     margin-left: 0px;
     background-color: #151515;
@@ -100,7 +100,7 @@ body {
     grid-column-start: 1;
     grid-column-end: 2;
     margin: 0 auto;
-    padding-left: 40px;
+    padding-left: 30px;
     padding-bottom: 20px;
     width: 250px;
     background-color: #151515;
@@ -116,7 +116,7 @@ body {
     grid-column-end: 3;
     justify-self: end;
     width: 250px;
-    padding-left: 40px;
+    padding-left: 30px;
     padding-bottom: 20px;
     background-color: #151515;
     border-color: #ffdb8d;
